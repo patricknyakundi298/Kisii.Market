@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>K.MARKET — Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">K.MARKET</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="sell.html">Sell</a>
+        <a href="contact.html">Contact</a>
+        <a href="#" id="nav-login">Sign In</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container hero">
+    <div class="hero-left">
+      <h2>Buy & Sell in Kisii County — Best Local Prices</h2>
+      <p>Local sellers. Low monthly fee. Customer Care: <strong>0710723242</strong></p>
+      <div class="cta">
+        <a class="btn" href="products.html">Browse Products</a>
+        <a class="btn ghost" href="sell.html">Become a Seller (Ksh 100/mo)</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="card">
+        <h3>Quick Search</h3>
+        <div class="search-inline">
+          <input id="home-search" placeholder="Search products, e.g. maize">
+          <button id="home-search-btn" class="btn">🔍</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Popular Categories</h3>
+        <div class="categories">
+          <button class="cat-btn" data-cat="Produce">Produce</button>
+          <button class="cat-btn" data-cat="Grains">Grains</button>
+          <button class="cat-btn" data-cat="Household">Household</button>
+          <button class="cat-btn" data-cat="Electronics">Electronics</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="container features">
+    <h3>Why K.MARKET?</h3>
+    <div class="grid">
+      <div class="feature">Local focus — Kisii sellers & buyers</div>
+      <div class="feature">Low seller fee: Ksh 100 / month</div>
+      <div class="feature">Direct contact & fast delivery options</div>
+      <div class="feature">Customer care: 0710723242</div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 K.MARKET — Serving Kisii & all over Kenya</div>
+  </footer>
+
+  <!-- Auth modal -->
+  <div id="modal-auth" class="modal hidden" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close" id="close-auth">×</button>
+      <h2 id="auth-title">Sign In to K.MARKET</h2>
+      <div class="tabs">
+        <button id="tab-login" class="active">Sign In</button>
+        <button id="tab-register">Create Account</button>
+      </div>
+
+      <div id="auth-body">
+        <form id="login-form" class="auth-form">
+          <input id="login-email" placeholder="Email or phone" required />
+          <input id="login-password" type="password" placeholder="Password" required />
+          <button id="btn-login" class="btn" type="button">Sign In</button>
+          <p class="muted">Don't have an account? <a href="#" id="goto-register">Create one</a></p>
+        </form>
+
+        <form id="register-form" class="auth-form hidden">
+          <input id="reg-name" placeholder="Full name" required />
+          <input id="reg-email" placeholder="Email or phone" required />
+          <input id="reg-password" type="password" placeholder="Password (min 6)" required />
+          <button id="btn-register" class="btn" type="button">Create Account</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+  </html>
