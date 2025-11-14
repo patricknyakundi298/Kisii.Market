@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>K.MARKET — Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">K.MARKET</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="sell.html">Sell</a>
+        <a href="contact.html">Contact</a>
+        <a href="#" id="logout-link">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Welcome, <span id="user-name"></span></h2>
+    <p class="muted">This is your dashboard. Post products, view messages, manage subscription (demo).</p>
+
+    <section class="card">
+      <h3>Post a Product (Demo)</h3>
+      <input id="post-title" placeholder="Product title" />
+      <input id="post-price" placeholder="Price (Ksh)" />
+      <select id="post-cat">
+        <option>Produce</option><option>Grains</option><option>Household</option><option>Electronics</option>
+      </select>
+      <textarea id="post-desc" placeholder="Short description"></textarea>
+      <button id="btn-post-product" class="btn" type="button">Add Product</button>
+      <div id="post-feedback" class="muted"></div>
+    </section>
+
+    <section class="card">
+      <h3>Your Inbox</h3>
+      <div id="inbox"></div>
+
+      <div class="compose">
+        <input id="msg-to" placeholder="To (shop name or user)" />
+        <input id="msg-sub" placeholder="Subject" />
+        <textarea id="msg-body" placeholder="Message body"></textarea>
+        <button id="btn-send-msg" class="btn" type="button">Send Message</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Your Subscription</h3>
+      <div id="sub-status">Not subscribed</div>
+      <button id="btn-cancel-sub" class="btn ghost hidden" type="button">Cancel Subscription</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 K.MARKET — Serving Kisii & all over Kenya</div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
